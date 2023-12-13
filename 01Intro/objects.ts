@@ -15,3 +15,20 @@ createUser(Uuser)
 function createCourse():{name:string,price:number}{
     return {name:"aaa",price:12}
 }
+
+
+
+
+//type aliases
+
+type User1 ={
+    name:string;
+    phoneno:number;
+    present:boolean
+}
+
+function createUser1 (user:User1):User1{
+    return{name:"b",phoneno:1,present:true}
+}
+
+createUser1({name:"a",phoneno:0,present:true})
