@@ -32,3 +32,38 @@ function createUser1 (user:User1):User1{
 }
 
 createUser1({name:"a",phoneno:0,present:true})
+
+
+//ReadOnly , Optional, Union
+
+type User2 ={
+    readonly id:number
+    name:string
+    phonenumber:number
+    creditcarddetails?:string // its optional '?'
+}
+
+function createUser2(user2:User2){}
+
+
+createUser2({id:123,name:"aa",phonenumber:22})
+
+
+//union '&'
+
+type CardDeatils1 ={
+    name:string
+}
+
+type CardDetails2={
+    mobilenumber:number
+}
+
+type CardDetails3=CardDeatils1 & CardDetails2 & {
+    cvv:number
+}
+
+function createUser3(user3:CardDetails3){
+}
+
+createUser3({name:"",mobilenumber:12,cvv:123})
