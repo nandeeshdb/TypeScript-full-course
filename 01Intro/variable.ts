@@ -7,4 +7,14 @@ console.log(greeting)
  //boolean
  let isLoggedIn:boolean=true
 
+ //any
+ //let hero
+ let hero:string
+ function getHero(){
+    return "hello"
+ }
+
+ hero=getHero()
+
+
 export{}
